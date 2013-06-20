@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44.0dip"
+        android:text="@string/title"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/toggle_garage_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98.0dip"
+        android:text="@string/toggle_garage" />
+
+    <TextView
+        android:id="@+id/door_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/toggle_garage_button"
+        android:layout_below="@id/title_text"
+        android:layout_marginTop="31.0dip"
+        android:text="@string/door_is"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/door_is"
+        android:layout_alignBottom="@id/door_is"
+        android:layout_toRightOf="@id/door_is"
+        android:paddingLeft="10.0dip"
+        android:text="@string/ellipses"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/close_garage_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/toggle_garage_button"
+        android:layout_alignRight="@id/toggle_garage_button"
+        android:layout_below="@id/toggle_garage_button"
+        android:layout_marginTop="44.0dip"
+        android:text="@string/close_garage" />
+
+</RelativeLayout>
